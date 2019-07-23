@@ -1,0 +1,13 @@
+.add-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .add-input {
+        width: 300px;
+    }
+
+    .add-btn {
+        width: 150px;
+    }
+}
