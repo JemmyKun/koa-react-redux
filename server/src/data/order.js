@@ -12,7 +12,7 @@ class Order {
         let sql = "INSERT INTO order_list(name,createTime,updateTime) VALUES(?,?,?)";
         return query(sql, [name, createTime, updateTime]);
     }
-    deletOrder(param) {
+    deleteOrder(param) {
         let { id } = param;
         let sql = "DELETE FROM order_list WHERE id=?";
         return query(sql, [id]);

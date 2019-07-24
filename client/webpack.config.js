@@ -12,9 +12,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
-                loader: ["babel-loader"]
+                loader: ["babel-loader", "eslint-loader"]
             }, {
                 test: /\.(css|sass|scss)$/,
                 exclude: /node_modules/,
