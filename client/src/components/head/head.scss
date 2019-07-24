@@ -1,0 +1,14 @@
+.app-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: #1890ff;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 20px;
+
+  .menu-item {
+    padding: 0 20px;
+    cursor: pointer;
+  }
+}

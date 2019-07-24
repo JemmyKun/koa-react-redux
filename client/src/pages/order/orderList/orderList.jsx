@@ -3,9 +3,14 @@ import { connect } from "react-redux";
 import { Icon } from "antd";
 import Action from "../../../action/order-action";
 import { getSagaType } from "../../../utils/sagaType";
+import {Table} from "antd";
 
 const OrderList = (props) => {
-    let { data, dispatch } = props.order;
+    let { data } = props.order;
+    let total = Array.isArray(data) && data.length;
+    let colnums = {
+
+    }
     return (
         <div className="list-box">
             {
@@ -19,12 +24,12 @@ const OrderList = (props) => {
                                 param: { id }
                             })} />
                         </div>
-                    )
+                    );
                 })
             }
         </div>
-    )
-}
+    );
+};
 
 const mapStateToProps = (state) => ({
     order: state.order
